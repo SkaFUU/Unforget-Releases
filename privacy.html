@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unforget – Privacy Policy</title>
+<link rel="alternate" hreflang="de" href="datenschutz.html">
+<style>
+  :root { --bg:#ffffff; --fg:#1d2024; --muted:#5b636d; --line:#dde1e6; --accent:#1f8a4c; --box:#f3f5f7; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d2024; --fg:#e8eaed; --muted:#a6adb6; --line:#363b42; --accent:#4cc27e; --box:#262a30; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.7em; margin:0 0 4px; } h2 { font-size:1.2em; margin:32px 0 8px; }
+  .lang { float:right; font-size:.9em; } a { color:var(--accent); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  .box { background:var(--box); border-radius:8px; padding:12px 16px; }
+  table { border-collapse:collapse; width:100%; font-size:.95em; } th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; } .wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+<a class="lang" href="datenschutz.html" lang="de">Deutsch</a>
+<h1>Privacy Policy for Unforget</h1>
+<p class="meta">Applies to the Unforget app for Android and Windows · Last updated: 15 November 2026</p>
+
+<div class="box">
+<p><b>In short:</b> Unforget works on your device. There are no accounts, no ads, no analytics and no server of ours. Your photos, documents, names and face features do not leave the device – unless you sync them yourself with your own PC (on your own Wi-Fi, encrypted) or switch on one of the online features marked 🌐.</p>
+</div>
+
+<h2>1. What Unforget processes on your device</h2>
+<p>So that you can search and organise photos and documents, Unforget reads the files in the folders you allow and stores in a database on the device:</p>
+<ul>
+  <li>information from the files (capture date, camera, location stored in photos, file name and folder),</li>
+  <li>thumbnails,</li>
+  <li>text recognised in documents and images (on-device text recognition),</li>
+  <li>features for the content search,</li>
+  <li>face features (see section 2),</li>
+  <li>what you enter yourself: names of people, albums, ratings, corrections.</li>
+</ul>
+<p>This data stays on the device. We (the developers) never see it. When you uninstall Unforget, Android deletes the database and thumbnails. Your photos and documents themselves are kept.</p>
+
+<h2>2. Face features</h2>
+<p>Unforget detects faces in your photos and computes features from them (a sequence of numbers) to group photos of the same person. This happens only on your device; the recognition models run locally (on the phone they are added as a 🌐 add-on pack when you ask for it, see section 5). Face features are never transferred to the internet, not to us either. When syncing with your own PC, only names and assignments are synced; the PC computes the features itself. You can switch off face recognition in the settings. You delete all stored features together with the rest of the app data (Android: App info → Storage → Clear data, or uninstall the app).</p>
+
+<h2>3. Permissions</h2>
+<ul>
+  <li><b>Photos and videos</b> (and location in photos): to show and search your photos and to place them on the map.</li>
+  <li><b>All files access</b> (optional, you switch it on yourself): to find and read documents (PDF, Office, scans) and, when you ask for it, to rotate, rename, move or delete photos and documents.</li>
+  <li><b>Internet / network</b>: for syncing on your own Wi-Fi and for the optional online features (section 5).</li>
+</ul>
+
+<h2>4. Syncing with your PC</h2>
+<p>You can connect Unforget on your phone with Unforget on your own PC (QR code). New photos are then sent to the PC, and names, albums and details are synced both ways. The connection runs directly between your devices on your own Wi-Fi – not over the internet and not through a server. All data is encrypted with a key known only to your two devices (ChaCha20-Poly1305).</p>
+
+<h2>5. Optional online features (🌐)</h2>
+<p>All online features are off at first and marked 🌐 in the app. Only when you agree or use them does Unforget connect to these services. For technical reasons the service sees your IP address; its own privacy policy applies.</p>
+<div class="wrap"><table>
+  <tr><th>Feature</th><th>Service</th><th>What is sent</th></tr>
+  <tr><td>🌐 Map background</td><td>OpenStreetMap (tile.openstreetmap.org), optionally Esri (server.arcgisonline.com) or OpenTopoMap (tile.opentopomap.org)</td><td>which part of the map is shown</td></tr>
+  <tr><td>🌐 Place names for albums</td><td>OpenStreetMap Nominatim (nominatim.openstreetmap.org)</td><td>one coordinate per place (from the photos, rounded to about 10 m) and the app language – no photos, no names</td></tr>
+  <tr><td>🌐 Add-on packs (e.g. models for content search or text recognition)</td><td>GitHub (github.com)</td><td>only the download request</td></tr>
+  <tr><td>Scan QR code (sync)</td><td>Google Play services (code scanner)</td><td>The camera image is analysed on the device. Google Play services may send technical diagnostic data (e.g. device model, version, error codes) to Google. Instead of scanning, you can also paste the code.</td></tr>
+</table></div>
+<p>On the PC, Unforget also asks once whether it may check for updates (request to github.com). On the phone, updates come through Google Play or the page you got the app from.</p>
+<p>Privacy policies of the services: <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://policies.google.com/privacy">Google</a>.</p>
+
+<h2>6. Report a problem (email to us)</h2>
+<p>Under Settings → About → “Report a problem”, Unforget prepares a message to us: your text and a log (app version, system, device model, error messages – without file names, paths, names of people or places). You see everything that is included beforehand. It is only sent if you send the message yourself from your email app (on the phone via “Share”); Unforget sends nothing automatically.</p>
+<p>If you write to us (via “Report a problem” or directly by email), we process your email address and the content of the message to handle and answer your request (Art. 6(1)(f) GDPR, legitimate interest in answering requests and fixing errors). We do not pass the message on and delete it once it is no longer needed, at the latest after two years, unless there is a legal obligation to keep it.</p>
+
+<h2>7. What there is not</h2>
+<ul>
+  <li>no user accounts and no sign-in,</li>
+  <li>no ads,</li>
+  <li>no analytics or tracking tools, no automatic crash reports to us,</li>
+  <li>no sharing or selling of data,</li>
+  <li>no cloud – there is no server holding your data.</li>
+</ul>
+
+<h2>8. Children</h2>
+<p>Unforget is not directed at children under 13.</p>
+
+<h2>9. Your rights</h2>
+<p>The data from the app lies only on your devices; you can delete it there at any time (in the app or by uninstalling). We do not receive it and therefore cannot provide information about it.</p>
+<p>If you have written to us (section 6), you have the right of access, rectification, erasure, restriction of processing, data portability and objection. Just write to the address below. You can also lodge a complaint with a data protection supervisory authority, in Austria the Datenschutzbehörde (<a href="https://www.dsb.gv.at">www.dsb.gv.at</a>). For the online services in section 5, please contact the respective provider.</p>
+
+<h2>10. Changes</h2>
+<p>If this policy changes, you will find the new version on this page with a new date.</p>
+
+<h2>11. Controller and contact</h2>
+<p>MT-Automation, owner Michael Thallmayer<br>Hintere Ortsstraße 50, 2320 Rauchenwarth, Austria<br>Email: <a href="mailto:support@mt-automation.at">support@mt-automation.at</a></p>
+</main>
+</body>
+</html>
