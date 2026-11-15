@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unforget – Galerie & Dokumente, ohne Cloud</title>
+<meta name="description" content="Unforget: eine Galerie für deine Fotos und eine Ablage für deine Dokumente – geordnet, durchsuchbar und nur auf deinem Gerät. Ohne Cloud, ohne Konto, ohne Werbung.">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="index.html">
+<link rel="alternate" hreflang="de" href="de.html">
+<style>
+  :root { --bg:#ffffff; --fg:#1d2024; --muted:#5b636d; --line:#dde1e6; --accent:#1f8a4c; --box:#f3f5f7; --navy1:#16213d; --navy2:#2a4a8f; --yellow:#ffc72c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14171b; --fg:#e8eaed; --muted:#a6adb6; --line:#2e333a; --accent:#4cc27e; --box:#1e2227; } }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:1000px; margin:0 auto; padding:0 16px; }
+  header { background:var(--navy1); color:#eef3ff; }
+  header .wrap { display:flex; align-items:center; gap:12px; height:60px; }
+  header .name { font-weight:700; font-size:1.2em; color:#eef3ff; text-decoration:none; display:flex; align-items:center; gap:10px; }
+  header img { width:34px; height:34px; }
+  header nav { margin-left:auto; font-size:.95em; }
+  header nav a { color:#b8c6e6; text-decoration:none; } header nav b { color:#eef3ff; }
+  .hero { background:radial-gradient(circle at 80% 20%, var(--navy2) 0%, var(--navy1) 65%); color:#eef3ff; padding:48px 0 56px; }
+  .hero h1 { font-size:clamp(2em, 6vw, 3.2em); line-height:1.12; margin:0 0 16px; letter-spacing:-.5px; }
+  .hero h1 span { color:var(--yellow); }
+  .hero p.lead { font-size:1.15em; max-width:640px; margin:0 0 28px; color:#d7e0f5; }
+  .btns { display:flex; flex-wrap:wrap; gap:12px; }
+  .btn { display:inline-flex; align-items:center; gap:10px; padding:12px 20px; border-radius:12px; font-weight:600; text-decoration:none; font-size:1em; }
+  .btn svg { width:22px; height:22px; flex:none; }
+  .btn.win { background:var(--yellow); color:#16213d; }
+  .btn.win:hover { background:#ffd65c; }
+  .btn.play { background:rgba(255,255,255,.08); color:#eef3ff; border:1px solid rgba(255,255,255,.25); cursor:default; }
+  .btn small { display:block; font-weight:400; font-size:.78em; color:#b8c6e6; line-height:1.2; }
+  .btn.win small { color:#3a4566; }
+  .btn span { line-height:1.25; }
+  .trust { display:flex; flex-wrap:wrap; gap:8px 20px; margin:28px 0 0; padding:0; list-style:none; color:#b8c6e6; }
+  .trust li::before { content:"✓ "; color:var(--yellow); }
+  h2 { font-size:1.6em; margin:56px 0 20px; line-height:1.2; }
+  .shots { display:grid; grid-template-columns:repeat(3, 1fr); gap:28px 24px; margin:0; padding:0; list-style:none; }
+  .shots li { text-align:center; }
+  .shots img { box-sizing:content-box; width:calc(100% - 16px); max-width:244px; height:auto; aspect-ratio:9/20; display:block; margin:0 auto 10px; border-radius:28px; border:8px solid #0b1020;
+               box-shadow:0 10px 30px rgba(0,0,0,.18); background:#0b1020; }
+  .shots b { display:block; } .shots span { color:var(--muted); font-size:.92em; }
+  @media (max-width:700px) {
+    .shots { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; gap:16px; padding-bottom:12px; }
+    .shots li { flex:0 0 62%; scroll-snap-align:center; }
+  }
+  .feat { display:grid; grid-template-columns:repeat(2, 1fr); gap:16px; }
+  @media (max-width:700px) { .feat { grid-template-columns:1fr; } }
+  .feat div { background:var(--box); border-radius:16px; padding:18px 20px; }
+  .feat h3 { margin:0 0 6px; font-size:1.1em; } .feat p { margin:0; color:var(--muted); }
+  .dl { background:var(--box); border-radius:16px; padding:18px 20px; }
+  .dl h3 { margin:0 0 6px; font-size:1.1em; } .dl + .dl { margin-top:16px; } .dl p { margin:6px 0; } .dl ol { margin:6px 0; padding-left:22px; }
+  footer { margin-top:56px; border-top:1px solid var(--line); color:var(--muted); font-size:.92em; padding:20px 0 40px; }
+  footer a { margin-right:14px; }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="name" href="de.html"><img src="icon.svg" alt="">Unforget</a>
+  <nav><a href="index.html?en" hreflang="en" lang="en">EN</a> · <b>DE</b></nav>
+</div></header>
+
+<section class="hero"><div class="wrap">
+  <h1>Deine Fotos und Dokumente.<br><span>Ohne Cloud.</span></h1>
+  <p class="lead">Unforget ist eine Galerie für deine Fotos und eine Ablage für deine Dokumente – geordnet, durchsuchbar und nur auf deinem Gerät, auf Wunsch abgeglichen mit deinem PC.</p>
+  <div class="btns">
+    <a class="btn win" href="https://github.com/SkaFUU/Unforget-Releases/releases/latest">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3 5.5 10.5 4.4v7.1H3zM11.5 4.3 21 3v8.5h-9.5zM3 12.5h7.5v7.1L3 18.5zM11.5 12.5H21V21l-9.5-1.3z"/></svg>
+      <span>Für Windows herunterladen<small>kostenlos · Unforget-Setup-….exe</small></span></a>
+    <span class="btn play" title="Google Play">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 2.8v18.4c0 .5.5.8.9.6L21 12.6c.4-.3.4-.9 0-1.2L4.9 2.2c-.4-.2-.9.1-.9.6z"/></svg>
+      <span>Google Play<small>bald im Play Store – Test läuft</small></span></span>
+  </div>
+  <ul class="trust"><li>Offline</li><li>Kein Konto</li><li>Keine Werbung</li><li>Keine Analyse</li></ul>
+</div></section>
+
+<main class="wrap">
+  <h2>Ein Blick hinein</h2>
+  <ul class="shots">
+    <li><img src="img/de/1-fotos.jpg" alt="Fotos nach Monaten mit „Heute vor … Jahren“" loading="lazy" width="432" height="960"><b>Alle deine Fotos.</b><span>Nach Tag, Monat oder Jahr – mit „Heute vor … Jahren“.</span></li>
+    <li><img src="img/de/2-suche.jpg" alt="Suche nach „Gletscher“ findet passende Bilder" loading="lazy" width="432" height="960"><b>Alles finden.</b><span>Suche nach dem, was auf dem Bild ist – direkt am Handy.</span></li>
+    <li><img src="img/de/3-alben.jpg" alt="Automatische Alben für Ausflüge und Urlaube" loading="lazy" width="432" height="960"><b>Alben, die sich selbst ordnen.</b><span>Urlaube und Ausflüge, erkannt an Datum und Ort.</span></li>
+    <li><img src="img/de/5-bearbeiten.jpg" alt="Foto zuschneiden und geraderichten" loading="lazy" width="432" height="960"><b>Zuschneiden mit einem Tipp.</b><span>Zuschneiden, drehen, spiegeln, geraderichten – das Original ist zurückholbar.</span></li>
+    <li><img src="img/de/6-dokumente.jpg" alt="Dokumentliste mit Rechnungen, Kassenbons und Garantien" loading="lazy" width="432" height="960"><b>Rechnungen und PDFs, geordnet.</b><span>PDF, Word, Excel und Scans in einer Ablage.</span></li>
+    <li><img src="img/de/7-dokument.jpg" alt="Rechnung mit Betrag und Zahlungsfrist" loading="lazy" width="432" height="960"><b>Fristen, die du nicht vergisst.</b><span>Datum, Betrag, Absender und Fristen werden am Gerät gelesen.</span></li>
+  </ul>
+
+  <h2>Was Unforget ausmacht</h2>
+  <div class="feat">
+    <div><h3>Bleibt auf deinem Gerät</h3><p>Fotos, Gesichter, Namen und Dokumente verlassen nie dein Handy oder deinen PC. Kein Konto, keine Werbung, keine Analyse – alles funktioniert offline.</p></div>
+    <div><h3>Findet, was du suchst</h3><p>Suche nach Inhalt („Traktor“, „Sonnenuntergang“), nach Person, Ort und Datum – und im Text deiner Dokumente.</p></div>
+    <div><h3>Dokumente mit Fristen</h3><p>Rechnungen, Kassenbons, Garantien und Verträge: Unforget liest Art, Betrag und Absender und erinnert an fällige Zahlungen und ablaufende Garantien.</p></div>
+    <div><h3>Handy und PC im Abgleich</h3><p>Per QR-Code mit Unforget für Windows koppeln. Neue Fotos kommen wie eine Sicherung auf den PC, Namen und Alben gleichen sich in beide Richtungen ab – direkt im eigenen WLAN, verschlüsselt.</p></div>
+  </div>
+
+  <h2>Herunterladen</h2>
+  <div class="dl">
+    <h3>Windows</h3>
+    <ol>
+      <li><a href="https://github.com/SkaFUU/Unforget-Releases/releases/latest">Neueste Version</a> öffnen und <b>Unforget-Setup-<i>Version</i>.exe</b> laden (nicht „Update“).</li>
+      <li>Beim ersten Start zeigt Windows evtl. „Der Computer wurde durch Windows geschützt“ (die App ist neu): <b>Weitere Informationen → Trotzdem ausführen</b>.</li>
+    </ol>
+  </div>
+  <div class="dl">
+    <h3>Android</h3>
+    <p>Unforget kommt in den Google Play Store. Gerade läuft ein geschlossener Test.</p>
+  </div>
+</main>
+
+<footer><div class="wrap">
+  <a href="datenschutz.html">Datenschutz</a><a href="impressum.html">Impressum</a><a href="mailto:support@mt-automation.at">support@mt-automation.at</a><br>
+  MT-Automation, Rauchenwarth, Österreich
+</div></footer>
+</body>
+</html>
