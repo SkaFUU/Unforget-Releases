@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Unforget – Datenschutzerklärung</title>
+<link rel="alternate" hreflang="en" href="privacy.html">
+<style>
+  :root { --bg:#ffffff; --fg:#1d2024; --muted:#5b636d; --line:#dde1e6; --accent:#1f8a4c; --box:#f3f5f7; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d2024; --fg:#e8eaed; --muted:#a6adb6; --line:#363b42; --accent:#4cc27e; --box:#262a30; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.7em; margin:0 0 4px; } h2 { font-size:1.2em; margin:32px 0 8px; }
+  .lang { float:right; font-size:.9em; } a { color:var(--accent); }
+  .meta { color:var(--muted); margin:0 0 24px; }
+  .box { background:var(--box); border-radius:8px; padding:12px 16px; }
+  table { border-collapse:collapse; width:100%; font-size:.95em; } th, td { text-align:left; vertical-align:top; padding:8px; border-bottom:1px solid var(--line); }
+  th { color:var(--muted); font-weight:600; } .wrap { overflow-x:auto; }
+</style>
+</head>
+<body>
+<main>
+<a class="lang" href="privacy.html" lang="en">English</a>
+<h1>Datenschutzerklärung für Unforget</h1>
+<p class="meta">Gilt für die App Unforget für Android und Windows · Stand: 15. November 2026</p>
+
+<div class="box">
+<p><b>Kurz gesagt:</b> Unforget arbeitet auf deinem Gerät. Es gibt keine Konten, keine Werbung, keine Analyse und keinen Server von uns. Deine Fotos, Dokumente, Namen und Gesichtsmerkmale verlassen das Gerät nicht – außer du gleichst sie selbst mit deinem eigenen PC ab (im eigenen WLAN, verschlüsselt) oder schaltest eine der mit 🌐 markierten Online-Funktionen ein.</p>
+</div>
+
+<h2>1. Was Unforget auf deinem Gerät verarbeitet</h2>
+<p>Damit du Fotos und Dokumente durchsuchen und ordnen kannst, liest Unforget die Dateien in den Ordnern, die du freigibst, und speichert in einer Datenbank auf dem Gerät:</p>
+<ul>
+  <li>Angaben aus den Dateien (Aufnahmedatum, Kamera, Ortsangaben aus den Fotos, Dateiname und Ordner),</li>
+  <li>Vorschaubilder,</li>
+  <li>erkannten Text aus Dokumenten und Bildern (Texterkennung auf dem Gerät),</li>
+  <li>Merkmale für die Inhaltssuche,</li>
+  <li>Gesichtsmerkmale (siehe Punkt 2),</li>
+  <li>was du selbst einträgst: Namen von Personen, Alben, Bewertungen, Korrekturen.</li>
+</ul>
+<p>Diese Daten bleiben auf dem Gerät. Wir (die Entwickler) bekommen sie nie zu sehen. Wenn du Unforget deinstallierst, löscht Android die Datenbank und die Vorschaubilder. Deine Fotos und Dokumente selbst bleiben erhalten.</p>
+
+<h2>2. Gesichtsmerkmale</h2>
+<p>Unforget erkennt Gesichter auf deinen Fotos und berechnet daraus Merkmale (eine Zahlenfolge), um Fotos derselben Person zu gruppieren. Das geschieht ausschließlich auf deinem Gerät; die Erkennungsmodelle laufen lokal (am Handy kommen sie auf deinen Wunsch als 🌐 Zusatzpaket dazu, siehe Punkt 5). Gesichtsmerkmale werden nie ins Internet übertragen, auch nicht an uns. Beim Abgleich mit deinem eigenen PC werden nur die Namen und Zuordnungen abgeglichen; der PC berechnet die Merkmale selbst. Du kannst die Gesichtserkennung in den Einstellungen ausschalten. Alle gespeicherten Merkmale löschst du zusammen mit den übrigen App-Daten (Android: App-Info → Speicher → Daten löschen, oder App deinstallieren).</p>
+
+<h2>3. Berechtigungen</h2>
+<ul>
+  <li><b>Fotos und Videos</b> (und Ortsangaben in Fotos): um deine Fotos anzuzeigen, zu durchsuchen und auf der Karte zu zeigen.</li>
+  <li><b>Zugriff auf alle Dateien</b> (optional, schaltest du selbst ein): um Dokumente (PDF, Office, Scans) zu finden und zu lesen und um Fotos und Dokumente auf deinen Wunsch zu drehen, umzubenennen, zu verschieben oder zu löschen.</li>
+  <li><b>Internet / Netzwerk</b>: für den Abgleich im eigenen WLAN und für die freiwilligen Online-Funktionen (Punkt 5).</li>
+</ul>
+
+<h2>4. Abgleich mit deinem PC</h2>
+<p>Du kannst Unforget am Handy mit Unforget auf deinem eigenen PC verbinden (QR-Code). Dann werden neue Fotos zum PC gesendet und Namen, Alben und Angaben in beide Richtungen abgeglichen. Die Verbindung läuft direkt zwischen deinen Geräten im eigenen WLAN – nicht über das Internet und nicht über einen Server. Alle Daten sind dabei mit einem Schlüssel verschlüsselt, den nur deine beiden Geräte kennen (ChaCha20-Poly1305).</p>
+
+<h2>5. Freiwillige Online-Funktionen (🌐)</h2>
+<p>Alle Online-Funktionen sind zu Beginn ausgeschaltet und in der App mit 🌐 gekennzeichnet. Erst wenn du zustimmst bzw. sie benutzt, stellt Unforget eine Verbindung zu diesen Diensten her. Dabei sieht der jeweilige Dienst technisch bedingt deine IP-Adresse; es gelten dessen Datenschutzbestimmungen.</p>
+<div class="wrap"><table>
+  <tr><th>Funktion</th><th>Dienst</th><th>Was übertragen wird</th></tr>
+  <tr><td>🌐 Kartenhintergrund</td><td>OpenStreetMap (tile.openstreetmap.org), wahlweise Esri (server.arcgisonline.com) oder OpenTopoMap (tile.opentopomap.org)</td><td>welcher Kartenausschnitt angezeigt wird</td></tr>
+  <tr><td>🌐 Ortsnamen für Alben</td><td>OpenStreetMap Nominatim (nominatim.openstreetmap.org)</td><td>eine Koordinate je Ort (aus den Fotos, auf etwa 10 m gerundet) und die App-Sprache – keine Fotos, keine Namen</td></tr>
+  <tr><td>🌐 Zusatzpakete (z. B. Modelle für Inhaltssuche oder Texterkennung)</td><td>GitHub (github.com)</td><td>nur die Anfrage zum Herunterladen</td></tr>
+  <tr><td>QR-Code scannen (Abgleich)</td><td>Google Play-Dienste (Code-Scanner)</td><td>Das Kamerabild wird auf dem Gerät ausgewertet. Google Play-Dienste können dabei technische Diagnosedaten (z. B. Gerätemodell, Version, Fehlercodes) an Google senden. Statt zu scannen, kannst du den Code auch einfügen.</td></tr>
+</table></div>
+<p>Am PC fragt Unforget zusätzlich einmal, ob es nach Updates suchen darf (Anfrage an github.com). Am Handy kommen Updates über Google Play bzw. die Seite, von der du die App hast.</p>
+<p>Datenschutz der Dienste: <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a>, <a href="https://www.esri.com/en-us/privacy/overview">Esri</a>, <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub</a>, <a href="https://policies.google.com/privacy">Google</a>.</p>
+
+<h2>6. Problem melden (E-Mail an uns)</h2>
+<p>Unter Einstellungen → Über → „Problem melden“ bereitet Unforget eine Nachricht an uns vor: deinen Text und ein Protokoll (App-Version, System, Gerätemodell, Fehlermeldungen – ohne Dateinamen, Pfade, Namen von Personen und Orte). Du siehst vorher alles, was mitgeht. Gesendet wird nur, wenn du die Nachricht selbst über dein E-Mail-Programm (am Handy über „Teilen“) abschickst; Unforget sendet nichts automatisch.</p>
+<p>Schreibst du uns (über „Problem melden“ oder direkt per E-Mail), verarbeiten wir deine E-Mail-Adresse und den Inhalt der Nachricht, um dein Anliegen zu bearbeiten und zu beantworten (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an der Beantwortung von Anfragen und der Fehlerbehebung). Wir geben die Nachricht nicht weiter und löschen sie, sobald sie nicht mehr gebraucht wird, spätestens nach zwei Jahren, sofern keine gesetzliche Aufbewahrungspflicht besteht.</p>
+
+<h2>7. Was es nicht gibt</h2>
+<ul>
+  <li>keine Benutzerkonten und keine Anmeldung,</li>
+  <li>keine Werbung,</li>
+  <li>keine Analyse- oder Tracking-Werkzeuge, keine automatischen Absturzberichte an uns,</li>
+  <li>keine Weitergabe oder kein Verkauf von Daten,</li>
+  <li>keine Cloud – es gibt keinen Server, auf dem deine Daten liegen.</li>
+</ul>
+
+<h2>8. Kinder</h2>
+<p>Unforget richtet sich nicht an Kinder unter 13 Jahren.</p>
+
+<h2>9. Deine Rechte</h2>
+<p>Die Daten aus der App liegen allein auf deinen Geräten; du kannst sie dort jederzeit löschen (in der App oder durch Deinstallieren). Wir erhalten sie nicht und können dazu deshalb auch keine Auskunft geben.</p>
+<p>Hast du uns geschrieben (Punkt 6), hast du das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Schreib dazu einfach an die unten genannte Adresse. Du kannst dich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, in Österreich bei der Datenschutzbehörde (<a href="https://www.dsb.gv.at">www.dsb.gv.at</a>). Für die Online-Dienste aus Punkt 5 wende dich bitte an den jeweiligen Anbieter.</p>
+
+<h2>10. Änderungen</h2>
+<p>Ändert sich etwas an dieser Erklärung, findest du die neue Fassung auf dieser Seite mit neuem Datum.</p>
+
+<h2>11. Verantwortlicher und Kontakt</h2>
+<p>MT-Automation, Inhaber Michael Thallmayer<br>Hintere Ortsstraße 50, 2320 Rauchenwarth, Österreich<br>E-Mail: <a href="mailto:support@mt-automation.at">support@mt-automation.at</a></p>
+</main>
+</body>
+</html>
